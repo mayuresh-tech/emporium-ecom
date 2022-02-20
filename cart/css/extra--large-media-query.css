@@ -167,3 +167,39 @@ input.form-input-field:focus {
 .cart-total-box .save-rs {
   margin-top: 1rem;
 }
+
+.quantity-box {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.quantity-box button {
+  height: 2rem;
+  width: 2rem;
+}
+
+.quantity-box p {
+  margin-top: 0.4rem;
+}
+
+.quantity-box p, .quantity-box button {
+  margin-right: 0.5rem;
+}
+
+button.btn-solid-floating svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+button.btn-solid-floating {
+  padding: 0;
+  padding-top: 0.2rem;
+}
+
+.btn-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+}
