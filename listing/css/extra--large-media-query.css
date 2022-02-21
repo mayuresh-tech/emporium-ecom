@@ -38,6 +38,11 @@ img {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   padding: 1rem 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: var(--primary-font-color);
 }
 
 #nav-section {
@@ -122,84 +127,92 @@ input.form-input-field:focus {
   outline: var(--primary-light-color) 1px solid;
 }
 
-.cart-section {
-  margin-top: 2rem;
+#side-container {
+  position: fixed;
+  height: 100vh;
+  top: 5.5rem;
+  width: 18%;
+  z-index: 10;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.cart-section p.p-large.text-center {
-  margin-top: 2rem;
-  font-weight: 900;
+.products-content {
+  width: 78%;
+  position: absolute;
+  top: 5.5rem;
+  left: 18%;
+  margin: 1rem 2rem;
 }
 
-.main-cart-box {
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.products-content .card-container-horizontal {
+  margin: 0;
+  margin: 1rem auto;
+  margin-right: 1rem;
 }
 
-.main-cart-box .card-container-horizontal {
-  height: 45%;
+.products-content .card-container-horizontal {
+  width: 95%;
+}
+
+.products-content .text-regular-weight.text-left {
+  font-size: 1.5rem;
+}
+
+.products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.opening-bar {
+  padding: 1.5rem 2rem;
 }
 
 .side-ways {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
-.total-box {
-  padding: 1rem;
-  height: fit-content;
-  margin-top: 1.5rem;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+.side-ways button.no-bg.btn-text-primary {
+  margin: 0;
+  margin-right: 0.5rem;
+  padding: 0;
 }
 
-.cart-total-box * {
-  margin: 0.4rem 2rem;
+.filter-section {
+  margin-top: 1.2rem;
 }
 
-.cart-total-box button {
-  width: 70%;
-  margin: 1.5rem auto;
-}
-
-.cart-total-box .save-rs {
-  margin-top: 1rem;
-}
-
-.quantity-box {
-  margin-top: 1rem;
+.side-ways-left {
   display: flex;
   justify-content: flex-start;
-}
-
-.quantity-box button {
-  height: 2rem;
-  width: 2rem;
-}
-
-.quantity-box p {
-  margin-top: 0.4rem;
-}
-
-.quantity-box p, .quantity-box button {
-  margin-right: 0.5rem;
-}
-
-button.btn-solid-floating svg {
-  height: 1rem;
-  width: 1rem;
-}
-
-button.btn-solid-floating {
-  padding: 0;
-  padding-top: 0.2rem;
-}
-
-.btn-box {
-  display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: center;
+}
+
+.side-ways-left.big {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-top: 1rem;
+}
+
+.side-ways-left.big input {
+  margin-top: 1rem;
+}
+
+
+.side-ways-center {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.side-ways-center .side-ways {
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+#side-container input {
+  margin: 0rem 0.5rem;
 }
