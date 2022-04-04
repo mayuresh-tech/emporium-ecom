@@ -1,78 +1,70 @@
-# Emporium - Ecommerce store built using Zippy-UI
+# Getting Started with Create React App
 
-Live link: https://emporium-ecom.netlify.app/
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-Pages and what Components are used from Zippy-UI:
+In the project directory, you can run:
 
----
+### `npm start`
 
-1. Homepage:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-![homepage](./screenshots/homepage.png)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Components: 
-- Buttons and Icons on Navbar
-- All Images on Website
-- Text content (size, weight)
+### `npm test`
 
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-2. Product Listing page with Filters
+### `npm run build`
 
-![listing-page](./screenshots/listing.png)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Components: 
-- Horizontal Trending card with Badge
-- Vertical Cards with Wishlist and Dismiss Buttons
-- Vertical Cards without Badge
-- Silder for Price
-- Text content (weight, size)
-- Clear All (underline) Button
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-3. Cart Page
+### `npm run eject`
 
-![cart](./screenshots/cart.png)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Components: 
-- Horizontal Card
-- Order Button
-- Text content (size, weight)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-4. Wishlist Page
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-![cart](./screenshots/wishlist.png)
+## Learn More
 
-Components: 
-- Vertical Cards with Badge and Dismiss Button
-- Text content (size, weight)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
----
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-5. Login Page
+### Code Splitting
 
-![cart](./screenshots/login.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Components: 
-- Inputs with label
-- Login Button
-- Logout (secondary) Button
-- Text content (size, weight)
+### Analyzing the Bundle Size
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-6. Signup Page
+### Making a Progressive Web App
 
-![cart](./screenshots/signup.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Components: 
-- Inputs with label
-- Create an Account Button
-- Text content (size, weight)
+### Advanced Configuration
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
