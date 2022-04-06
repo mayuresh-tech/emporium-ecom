@@ -54,7 +54,7 @@ function Navbar() {
                     src="favicon.svg"
                     alt="Logo"
                   />
-                  <div>Zippy UI</div>
+                  <div>Emporium</div>
                 </div>
                 <button id="cancel" className="no-bg cancel-btn">
                   X
