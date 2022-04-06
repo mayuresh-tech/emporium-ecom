@@ -7,7 +7,7 @@ import "./CartCardAndTotalBox.css";
 const CartCardAndTotalBox = () => {
   return (
     <>
-      <p class="p-large text-center">My Cart (2)</p>
+      <p class="p-large text-center">My Cart</p>
       <div class="main-cart-box">
         <div>
           <ProductCardHorizontal
@@ -35,7 +35,7 @@ const CartCardAndTotalBox = () => {
             }}
           />
         </div>
-        <CartTotalBox />
+        <CartTotalBox item={{ quantity: 2, cartPrice: 1198, discount: 120, delivery: 0, finalAmount: 1078 }}/>
       </div>
     </>
   );

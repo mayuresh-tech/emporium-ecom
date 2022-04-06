@@ -1,0 +1,27 @@
+.products-content {
+    width: 78%;
+    position: absolute;
+    top: 5.5rem;
+    left: 18%;
+    margin: 1rem 2rem;
+}
+
+.products-content .card-container-horizontal {
+    margin: 0;
+    margin: 1rem auto;
+    margin-right: 1rem;
+}
+
+.products-content .card-container-horizontal {
+    width: 95%;
+}
+
+.products-content .text-regular-weight.text-left {
+    font-size: 1.5rem;
+}
+
+.products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
