@@ -1,0 +1,9 @@
+.main-cart-box {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-cart-box .card-container-horizontal {
+    height: 45%;
+}
