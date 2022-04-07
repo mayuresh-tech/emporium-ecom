@@ -25,3 +25,16 @@
     flex-flow: row wrap;
     justify-content: center;
 }
+
+.card-container-horizontal-listing {
+    height: 50%;
+    margin: 1.5rem 2.5rem;
+    padding: 0.5rem;
+    border: var(--card-border-color) 2px solid;
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

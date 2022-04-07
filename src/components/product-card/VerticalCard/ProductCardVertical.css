@@ -1,4 +1,12 @@
-.discount, .cut-price {
+.discount,
+.cut-price {
     margin-left: 0.5rem;
 }
 
+.no-wishlist.no-bg.btn-icon svg {
+    fill: white;
+    stroke: var(--btn-color-primary);
+    stroke-width: 2rem;
+    stroke-dasharray: 2, 2;
+    stroke-linejoin: round;
+}

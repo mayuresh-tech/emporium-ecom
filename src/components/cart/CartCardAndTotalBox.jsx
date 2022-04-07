@@ -20,6 +20,7 @@ const CartCardAndTotalBox = () => {
               salePrice: 899,
               originalPrice: 999,
               discountPercent: 10,
+              closeActive: true
             }}
           />
           <ProductCardHorizontal
@@ -32,6 +33,7 @@ const CartCardAndTotalBox = () => {
               salePrice: 899,
               originalPrice: 999,
               discountPercent: 10,
+              closeActive: true
             }}
           />
         </div>

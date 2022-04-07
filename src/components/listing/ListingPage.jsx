@@ -8,7 +8,7 @@ const ListingPage = ({ item }) => {
     <main class="products-content">
       <p class="text-regular-weight text-left">Products</p>
       <p>(Showing all products)</p>
-      <div class="card-container-horizontal">
+      <div class="card-container-horizontal-listing">
         <div class="image-container">
           <div class="badge-container">
             <img
@@ -47,7 +47,9 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: false
+            closeActive: false,
+            wishlisted: false,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
@@ -58,7 +60,9 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: false
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
@@ -69,7 +73,9 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: false
+            closeActive: false,
+            wishlisted: false,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
@@ -80,7 +86,9 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: false
+            closeActive: false,
+            wishlisted: false,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
@@ -91,7 +99,9 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: false
+            closeActive: false,
+            wishlisted: false,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
@@ -102,7 +112,9 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: false
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
       </div>
