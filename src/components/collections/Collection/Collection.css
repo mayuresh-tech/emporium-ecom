@@ -1,0 +1,6 @@
+.collections {
+    margin: 1rem 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }

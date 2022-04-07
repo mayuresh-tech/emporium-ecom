@@ -1,0 +1,54 @@
+.flexibleBox {
+    background-image: url("../../../../public/assets/decor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    float: left;
+    height: 90%;
+    width: 30%;
+}
+
+.hover-box:hover {
+    height: 100%;
+    width: 33%;
+    margin-right: 1%;
+    margin-left: 1%;
+    transition: 2s;
+}
+
+.content p {
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-size: 2rem;
+    color: var(--primary-font-color);
+    margin-bottom: 5px;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.knowmore {
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: var(--primary-font-color);
+    font-weight: 1000;
+    font-family: Peace Sans, sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.flexibleBox:nth-child(1) {
+    margin-right: 1rem;
+}
+
+.flexibleBox:nth-child(2) {
+    margin-right: 1rem;
+}

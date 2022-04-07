@@ -1,0 +1,38 @@
+.collec-box {
+    cursor: pointer;
+    padding: 1rem;
+    width: 40%;
+    margin: 1rem;
+    border: var(--primary-dark-bg-color) 1px solid;
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+  }
+  
+  .collec-image .responsive-img {
+    aspect-ratio: unset;
+    height: 100%;
+  }
+  
+  .flex-right {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .new-arrival-text {
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+  
+  .collec-name {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .collec-description {
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 1rem;
+  }

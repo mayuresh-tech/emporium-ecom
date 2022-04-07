@@ -1,0 +1,16 @@
+
+
+.banner .responsive-img {
+    margin: 1rem 2rem;
+}
+
+.cat-images {
+    position: relative;
+    height: 15rem;
+    opacity: 1;
+}
+
+.cat-images:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
