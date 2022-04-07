@@ -1,15 +1,15 @@
 .wishlist-box {
-    margin: 1rem 2rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  }
+  margin: 1rem 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
 
-  p.p-large.text-center {
-    margin-top: 2rem;
-    font-weight: 900;
-  }
+p.p-large.text-center {
+  margin-top: 2rem;
+  font-weight: 900;
+}

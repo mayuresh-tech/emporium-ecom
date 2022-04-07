@@ -3,16 +3,15 @@ import { Navbar } from "../components/navbar/Navbar";
 
 import ProductCardVertical from "../components/product-card/VerticalCard/ProductCardVertical";
 
-
 import "./Wishlist.css";
 
 const Wishlist = () => {
-    return (
-        <>
-            <Navbar/>
-            <p class="p-large text-center">My Wishlist</p>
-            <div class="wishlist-box">
-            <ProductCardVertical
+  return (
+    <>
+      <Navbar />
+      <p class="p-large text-center">My Wishlist</p>
+      <div class="wishlist-box">
+        <ProductCardVertical
           item={{
             trendingText: "New",
             productName: "Blue T-Shirt",
@@ -20,6 +19,7 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: true
           }}
         />
         <ProductCardVertical
@@ -30,6 +30,7 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: true
           }}
         />
         <ProductCardVertical
@@ -40,6 +41,7 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: true
           }}
         />
         <ProductCardVertical
@@ -50,11 +52,12 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: true
           }}
         />
-            </div>
-        </>
-    );
+      </div>
+    </>
+  );
 };
 
 export default Wishlist;
