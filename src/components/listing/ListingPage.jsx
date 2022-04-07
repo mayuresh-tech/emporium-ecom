@@ -47,6 +47,7 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: false
           }}
         />
         <ProductCardVertical
@@ -57,6 +58,7 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: false
           }}
         />
         <ProductCardVertical
@@ -67,6 +69,7 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: false
           }}
         />
         <ProductCardVertical
@@ -77,6 +80,7 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: false
           }}
         />
         <ProductCardVertical
@@ -87,6 +91,7 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: false
           }}
         />
         <ProductCardVertical
@@ -97,6 +102,7 @@ const ListingPage = ({ item }) => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: false
           }}
         />
       </div>

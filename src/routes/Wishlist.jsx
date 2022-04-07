@@ -19,6 +19,7 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: true
           }}
         />
         <ProductCardVertical
@@ -29,6 +30,7 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: true
           }}
         />
         <ProductCardVertical
@@ -39,6 +41,7 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: true
           }}
         />
         <ProductCardVertical
@@ -49,6 +52,7 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
+            closeActive: true
           }}
         />
       </div>
