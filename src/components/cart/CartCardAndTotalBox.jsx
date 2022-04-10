@@ -7,7 +7,7 @@ import "./CartCardAndTotalBox.css";
 const CartCardAndTotalBox = () => {
   return (
     <>
-      <p class="p-large text-center">My Cart</p>
+      <p class="p-large text-center top-description">My Cart</p>
       <div class="main-cart-box">
         <div>
           <ProductCardHorizontal

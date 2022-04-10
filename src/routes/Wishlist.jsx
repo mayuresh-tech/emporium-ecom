@@ -9,7 +9,7 @@ const Wishlist = () => {
   return (
     <>
       <Navbar />
-      <p class="p-large text-center">My Wishlist</p>
+      <p class="p-large text-center top-description">My Wishlist</p>
       <div class="wishlist-box">
         <ProductCardVertical
           item={{
