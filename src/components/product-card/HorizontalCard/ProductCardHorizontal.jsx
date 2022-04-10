@@ -12,6 +12,7 @@ const ProductCardHorizontal = ({ item }) => {
               <img
                 class="responsive-img product-img"
                 src="/assets/product.jpg"
+                alt="Product"
               />
               <span class="img-badge">{item.trendingText}</span>
             </div>

@@ -3,7 +3,6 @@ import React from "react";
 import "./CategoriesGrid.css";
 
 import CategoriesCard from "../CategoriesCard/CategoriesCard";
-import { Link } from "react-router-dom";
 
 const CategoriesGrid = () => {
   return (

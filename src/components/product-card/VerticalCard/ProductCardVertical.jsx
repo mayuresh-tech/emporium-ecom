@@ -7,7 +7,11 @@ const ProductCardVertical = ({ item }) => {
     <div class="card-container-vertical">
       <div class="image-container">
         <div class="badge-container-vertical">
-          <img class="product-img-vertical" src={item.imagePath} />
+          <img
+            class="product-img-vertical"
+            src={item.imagePath}
+            alt="Product"
+          />
           <span class="img-badge">{item.trendingText}</span>
           {item.closeActive ? (
             <span class="close-badge">

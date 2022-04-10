@@ -19,8 +19,9 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: true,
-            wishlisted: true
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
@@ -31,8 +32,9 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: true,
-            wishlisted: true
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
@@ -43,8 +45,9 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: true,
-            wishlisted: true
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
@@ -55,8 +58,9 @@ const Wishlist = () => {
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: true,
-            wishlisted: true
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
       </div>

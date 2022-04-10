@@ -14,6 +14,7 @@ const ListingPage = ({ item }) => {
             <img
               class="responsive-img product-img"
               src="../assets/product.jpg"
+              alt="Product"
             />
             <span class="img-badge">Trend</span>
           </div>
