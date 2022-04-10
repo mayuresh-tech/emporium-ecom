@@ -11,7 +11,8 @@ const ProductCardHorizontal = ({ item }) => {
             <div>
               <img
                 class="responsive-img product-img"
-                src="/assets/product.jpg"
+                src={item.imagePath}
+                alt="Product"
               />
               <span class="img-badge">{item.trendingText}</span>
             </div>
@@ -23,7 +24,6 @@ const ProductCardHorizontal = ({ item }) => {
             {item.productShortDescription}
           </p>
           <p class="product-soldby">{item.soldBy}</p>
-          <p class="product-description">{item.productLongDescription}</p>
           <p class="price">
             Rs. {item.salePrice}
             <span class="cut-price">Rs. {item.originalPrice}</span>
@@ -43,9 +43,11 @@ const ProductCardHorizontal = ({ item }) => {
                 </svg>
               </button>
             </div>
-            <button class="no-bg btn-icon-text-outline">
-              Move to Wishlist
-            </button>
+            {item.isWishlisted ? null : (
+              <button class="no-bg btn-icon-text-outline">
+                Move to Wishlist
+              </button>
+            )}
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import "./CategoriesCard.css";
 const CategoriesCard = ({ item }) => {
   return (
     <div className="cat-images">
-      <Link to="products">
+      <Link to="listing">
         <img
           className="responsive-img"
           src={item.imgPath}

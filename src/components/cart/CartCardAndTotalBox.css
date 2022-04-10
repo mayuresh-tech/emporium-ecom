@@ -7,3 +7,7 @@
 .main-cart-box .card-container-horizontal {
     height: 45%;
 }
+
+.p-large.text-center.top-description {
+    margin-top: 7rem;
+}

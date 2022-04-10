@@ -9,54 +9,125 @@ const Wishlist = () => {
   return (
     <>
       <Navbar />
-      <p class="p-large text-center">My Wishlist</p>
+      <p class="p-large text-center top-description">My Wishlist</p>
       <div class="wishlist-box">
-        <ProductCardVertical
+      <ProductCardVertical
           item={{
-            trendingText: "New",
             productName: "Blue T-Shirt",
-            productDescription: "Lorem Ipsum has been the dummy text",
+            productShortDescription: "Lorem Ipsum has been the dummy text",
+            productLongDescription: "",
+            trendingText: "New",
+            categoryName: "men",
+            soldBy: "Amazon",
+            rating: 4.4,
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: true,
-            wishlisted: true
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
           item={{
-            trendingText: "New",
             productName: "Blue T-Shirt",
-            productDescription: "Lorem Ipsum has been the dummy text",
+            productShortDescription: "Lorem Ipsum has been the dummy text",
+            productLongDescription: "",
+            trendingText: "New",
+            categoryName: "men",
+            soldBy: "Amazon",
+            rating: 4.4,
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: true,
-            wishlisted: true
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
           item={{
-            trendingText: "New",
             productName: "Blue T-Shirt",
-            productDescription: "Lorem Ipsum has been the dummy text",
+            productShortDescription: "Lorem Ipsum has been the dummy text",
+            productLongDescription: "",
+            trendingText: "New",
+            categoryName: "men",
+            soldBy: "Amazon",
+            rating: 4.4,
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: true,
-            wishlisted: true
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
         <ProductCardVertical
           item={{
-            trendingText: "New",
             productName: "Blue T-Shirt",
-            productDescription: "Lorem Ipsum has been the dummy text",
+            productShortDescription: "Lorem Ipsum has been the dummy text",
+            productLongDescription: "",
+            trendingText: "New",
+            categoryName: "men",
+            soldBy: "Amazon",
+            rating: 4.4,
             salePrice: 899,
             originalPrice: 999,
             discountPercent: 10,
-            closeActive: true,
-            wishlisted: true
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
+          }}
+        />
+        <ProductCardVertical
+          item={{
+            productName: "Blue T-Shirt",
+            productShortDescription: "Lorem Ipsum has been the dummy text",
+            productLongDescription: "",
+            trendingText: "New",
+            categoryName: "men",
+            soldBy: "Amazon",
+            rating: 4.4,
+            salePrice: 899,
+            originalPrice: 999,
+            discountPercent: 10,
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
+          }}
+        />
+        <ProductCardVertical
+          item={{
+            productName: "Blue T-Shirt",
+            productShortDescription: "Lorem Ipsum has been the dummy text",
+            productLongDescription: "",
+            trendingText: "New",
+            categoryName: "men",
+            soldBy: "Amazon",
+            rating: 4.4,
+            salePrice: 899,
+            originalPrice: 999,
+            discountPercent: 10,
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
+          }}
+        />
+        <ProductCardVertical
+          item={{
+            productName: "Blue T-Shirt",
+            productShortDescription: "Lorem Ipsum has been the dummy text",
+            productLongDescription: "",
+            trendingText: "New",
+            categoryName: "men",
+            soldBy: "Amazon",
+            rating: 4.4,
+            salePrice: 899,
+            originalPrice: 999,
+            discountPercent: 10,
+            closeActive: false,
+            wishlisted: true,
+            imagePath: "/assets/product.jpg",
           }}
         />
       </div>

@@ -13,3 +13,7 @@ p.p-large.text-center {
   margin-top: 2rem;
   font-weight: 900;
 }
+
+.p-large.text-center.top-description {
+  margin-top: 7rem;
+}
