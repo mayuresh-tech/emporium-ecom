@@ -23,7 +23,7 @@ const CartCardAndTotalBox = () => {
               originalPrice: 999,
               discountPercent: 10,
               closeActive: true,
-              isWishlisted: false,
+              isWishlisted: true,
               imagePath: "/assets/product.jpg",
               quantity: 1,
             }}

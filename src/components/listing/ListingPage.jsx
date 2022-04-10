@@ -23,7 +23,7 @@ const ListingPage = ({ item }) => {
           originalPrice: 999,
           discountPercent: 10,
           closeActive: false,
-          wishlisted: true,
+          wishlisted: false,
           imagePath: "/assets/product.jpg",
         }}
       />
