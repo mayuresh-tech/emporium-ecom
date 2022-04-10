@@ -12,32 +12,50 @@ const CartCardAndTotalBox = () => {
         <div>
           <ProductCardHorizontal
             item={{
-              trendingText: "New",
               productName: "Blue T-Shirt",
               productShortDescription: "Lorem Ipsum has been the dummy text",
+              productLongDescription: "",
+              trendingText: "New",
+              categoryName: "men",
               soldBy: "Amazon",
-              quantity: 1,
+              rating: 4.4,
               salePrice: 899,
               originalPrice: 999,
               discountPercent: 10,
-              closeActive: true
+              closeActive: true,
+              isWishlisted: false,
+              imagePath: "/assets/product.jpg",
+              quantity: 1,
             }}
           />
           <ProductCardHorizontal
             item={{
-              trendingText: "New",
               productName: "Blue T-Shirt",
               productShortDescription: "Lorem Ipsum has been the dummy text",
+              productLongDescription: "",
+              trendingText: "New",
+              categoryName: "men",
               soldBy: "Amazon",
-              quantity: 1,
+              rating: 4.4,
               salePrice: 899,
               originalPrice: 999,
               discountPercent: 10,
-              closeActive: true
+              closeActive: true,
+              isWishlisted: false,
+              imagePath: "/assets/product.jpg",
+              quantity: 1,
             }}
           />
         </div>
-        <CartTotalBox item={{ quantity: 2, cartPrice: 1198, discount: 120, delivery: 0, finalAmount: 1078 }}/>
+        <CartTotalBox
+          item={{
+            quantity: 2,
+            cartPrice: 1198,
+            discount: 120,
+            delivery: 0,
+            finalAmount: 1078,
+          }}
+        />
       </div>
     </>
   );

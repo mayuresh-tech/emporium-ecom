@@ -41,7 +41,7 @@ const ProductCardVertical = ({ item }) => {
             </button>
           )}
         </div>
-        <p class="product-short-description">{item.productDescription}</p>
+        <p class="product-short-description">{item.productShortDescription}</p>
         <p class="price">
           Rs. {item.salePrice}{" "}
           <span class="cut-price">Rs. {item.originalPrice}</span>
