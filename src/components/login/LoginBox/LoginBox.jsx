@@ -1,9 +1,34 @@
+import axios from "axios";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../../context/AuthContext/AuthContext";
 
 import "./LoginBox.css";
 
 const LoginBox = () => {
+  const { setToken } = useAuth();
+  const navigate = useNavigate();
+
+  const testLogin = async () => {
+    try {
+      const response = await axios.post("/api/auth/signup", {
+        email: "test@gmail.com",
+        password: "test",
+      });
+      if (await response.data.encodedToken !== null) {
+        localStorage.setItem(
+          "login",
+          JSON.stringify(await response.data.encodedToken)
+        );
+        setToken(true);
+        navigate("/");
+      }
+    } catch (e) {
+      setToken(false);
+      navigate("/login");
+    }
+  };
+
   return (
     <div className="auth-box-login">
       <h4 id="h4">Login</h4>
@@ -44,6 +69,7 @@ const LoginBox = () => {
             id="login-btn"
             type="button"
             className="btn-submit btn-solid-primary"
+            onClick={testLogin}
           >
             Login
           </button>

@@ -7,6 +7,9 @@ import App from "./App";
 
 import { makeServer } from "./server";
 
+import { AuthProvider } from './context/AuthContext/AuthContext';
+import { DataProvider } from './context/DataContext/DataContext';
+
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
@@ -16,7 +19,12 @@ makeServer();
 root.render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+        <AuthProvider>
+        <DataProvider>
+          <App />
+
+          </DataProvider>
+        </AuthProvider>
     </BrowserRouter>
   </StrictMode>
 );
