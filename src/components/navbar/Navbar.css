@@ -92,3 +92,16 @@ a:active {
 input.form-input-field:focus {
     outline: var(--primary-light-color) 1px solid;
 }
+
+.flexx {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.flexx .badge.number#count {
+    display: grid;
+    top: -2.0rem;
+}

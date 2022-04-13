@@ -1,6 +1,4 @@
 import React from "react";
-import { Navbar } from "../components/navbar/Navbar";
-
 import ProductCardVertical from "../components/product-card/VerticalCard/ProductCardVertical";
 
 import "./Wishlist.css";
@@ -8,7 +6,6 @@ import "./Wishlist.css";
 const Wishlist = () => {
   return (
     <>
-      <Navbar />
       <p class="p-large text-center top-description">My Wishlist</p>
       <div class="wishlist-box">
       <ProductCardVertical
