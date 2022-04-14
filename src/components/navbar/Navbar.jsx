@@ -1,13 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext/AuthContext";
 import { useData } from "../../context/DataContext/DataContext";
 
 import "./Navbar.css";
 
 function Navbar() {
-  const { token } = useAuth();
+  const navigate = useNavigate();
+  const { token, setToken } = useAuth();
   const { data } = useData();
+
+  const doLogout = async () => {
+    localStorage.removeItem("login");
+    localStorage.removeItem("cart");
+    localStorage.removeItem("wishlist");
+    setToken(false);
+    navigate("/");
+  };
+
   return (
     <header>
       <nav className="nav-box">
@@ -49,9 +59,7 @@ function Navbar() {
 
         <div id="end-nav-content">
           {token ? (
-            <Link to="/login">
-              <button className="btn-solid-secondary">Logout</button>
-            </Link>
+              <button onClick={doLogout} className="btn-solid-secondary">Logout</button>
           ) : (
             <Link to="/login">
               <button className="btn-solid-primary">Login / Signup</button>
