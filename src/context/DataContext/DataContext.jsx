@@ -1,47 +1,17 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { DataReducer } from "../DataReducer/DataReducer";
 
-import { useAuth } from "../AuthContext/AuthContext";
-
 import axios from "axios";
 
 import {
   getProducts,
   getCategories,
-  getCartlist,
-  getWishlist,
 } from "../../services/services.js";
 
 const DataContext = createContext();
 
 const DataProvider = ({ children }) => {
-  const { token } = useAuth();
-
-  const loginToken = localStorage.getItem("login");
-
-  const loadCartUserData = async () => {
-    const cartResponse = await axios.get(`/api/user/cart`, {
-      headers: {
-        authorization: loginToken,
-      },
-    });
-    dispatch({
-      type: "LOAD_CART",
-      payload: cartResponse.data.cart,
-    });
-  };
-
-  const loadWishlistUserData = async () => {
-    const wishlistResponse = await axios.get(`/api/user/wishlist`, {
-      headers: {
-        authorization: loginToken,
-      },
-    });
-    dispatch({
-      type: "LOAD_WISHLIST",
-      payload: wishlistResponse.data.wishlist,
-    });
-  };
+  //const loginToken = localStorage.getItem("login");
 
   const [data, dispatch] = useReducer(DataReducer, {
     products: [],
@@ -58,6 +28,32 @@ const DataProvider = ({ children }) => {
   });
 
   useEffect(() => {
+    const loginToken = localStorage.getItem("login");
+
+    const loadCartUserData = async () => {
+      const cartResponse = await axios.get(`/api/user/cart`, {
+        headers: {
+          authorization: loginToken,
+        },
+      });
+      dispatch({
+        type: "LOAD_CART",
+        payload: cartResponse.data.cart,
+      });
+    };
+  
+    const loadWishlistUserData = async () => {
+      const wishlistResponse = await axios.get(`/api/user/wishlist`, {
+        headers: {
+          authorization: loginToken,
+        },
+      });
+      dispatch({
+        type: "LOAD_WISHLIST",
+        payload: wishlistResponse.data.wishlist,
+      });
+    };
+
     async function performSteps() {
       try {
         const productResponse = await getProducts();
