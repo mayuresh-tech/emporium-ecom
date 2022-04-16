@@ -8,8 +8,8 @@ const Wishlist = () => {
   const { data } = useData();
   return (
     <>
-      <p class="p-large text-center top-description">My Wishlist</p>
-      <div class="wishlist-box">
+      <p className="p-large text-center top-description">My Wishlist</p>
+      <div className="wishlist-box">
         {data.wishlist.length === 0 ? (
           <div className="empty-wishlist">
             <p>No products wishlisted!</p>

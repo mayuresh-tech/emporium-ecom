@@ -18,8 +18,8 @@ const ListingPage = () => {
   });
 
   return (
-    <main class="products-content">
-      <p class="text-regular-weight text-left">Products</p>
+    <main className="products-content">
+      <p className="text-regular-weight text-left">Products</p>
       <p>(Showing all products)</p>
       {trendingArr.map((item) => {
         return (

@@ -21,14 +21,14 @@ const CartCardAndTotalBox = () => {
 
   return (
     <>
-      <p class="p-large text-center top-description">My Cart</p>
+      <p className="p-large text-center top-description">My Cart</p>
       {data.cart.length === 0 ? (
         <div className="empty-cart">
           <p>No products in Cart!</p>
           <img src="./assets/empty_cart.svg" alt="Empty Cart"></img>
         </div>
       ) : (
-        <div class="main-cart-box">
+        <div className="main-cart-box">
           <div>
             {data.cart.map((item) => {
               return (
