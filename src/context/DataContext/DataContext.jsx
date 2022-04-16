@@ -1,7 +1,9 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { DataReducer } from "../DataReducer/DataReducer";
 
-import { getProducts } from "../../services/services.js";
+import { v4 as uuid } from "uuid";
+
+import { getProducts, getCategories } from "../../services/services.js";
 
 const DataContext = createContext();
 
@@ -15,7 +17,7 @@ const DataProvider = ({ children }) => {
     cart: [],
     wishlist: [],
     categories: [],
-    price: 1000,
+    price: 500,
     rating: 0,
     sortBy: null,
     men: false,
@@ -31,6 +33,11 @@ const DataProvider = ({ children }) => {
         dispatch({
           type: "LOAD_PRODUCTS",
           payload: productResponse.data.products,
+        });
+        const categoryResponse = await getCategories();
+        dispatch({
+          type: "LOAD_CATEGORY",
+          payload: categoryResponse.data.categories,
         });
       } catch (e) {
         console.log("load", e);

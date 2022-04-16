@@ -12,7 +12,7 @@ const ProductCardVertical = ({ item }) => {
             src={item.imagePath}
             alt="Product"
           />
-          <span class="img-badge">{item.trendingText}</span>
+          { item.trendingText === "" ? null: <span class="img-badge">{item.trendingText}</span> }
           {item.closeActive ? (
             <span class="close-badge">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
