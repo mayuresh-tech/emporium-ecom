@@ -21,6 +21,7 @@ const Wishlist = () => {
               <ProductCardVertical
                 key={item._id}
                 item={{
+                  id: item._id,
                   productName: item.productName,
                   productShortDescription: item.productShortDescription,
                   productLongDescription: item.productLongDescription,

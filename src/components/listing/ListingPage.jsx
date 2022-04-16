@@ -26,6 +26,7 @@ const ListingPage = () => {
           <TrendingCard
             key={item._id}
             item={{
+              id: item._id,
               productName: item.productName,
               productShortDescription: item.productShortDescription,
               productLongDescription: item.productLongDescription,
@@ -50,6 +51,7 @@ const ListingPage = () => {
             <ProductCardVertical
               key={item._id}
               item={{
+                id: item._id,
                 productName: item.productName,
                 productShortDescription: item.productShortDescription,
                 productLongDescription: item.productLongDescription,

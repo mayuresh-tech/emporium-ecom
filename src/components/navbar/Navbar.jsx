@@ -8,12 +8,15 @@ import "./Navbar.css";
 function Navbar() {
   const navigate = useNavigate();
   const { token, setToken } = useAuth();
-  const { data } = useData();
+  const { data, dispatch } = useData();
 
   const doLogout = async () => {
     localStorage.removeItem("login");
     localStorage.removeItem("cart");
     localStorage.removeItem("wishlist");
+    dispatch({
+      type: "LOGOUT",
+    });
     setToken(false);
     navigate("/");
   };

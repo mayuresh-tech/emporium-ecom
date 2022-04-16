@@ -35,6 +35,7 @@ const CartCardAndTotalBox = () => {
                 <ProductCardHorizontal
                   key={item._id}
                   item={{
+                    id: item._id,
                     productName: item.productName,
                     productShortDescription: item.productShortDescription,
                     productLongDescription: "",
@@ -58,9 +59,9 @@ const CartCardAndTotalBox = () => {
             item={{
               quantity: data.cart.length,
               cartPrice: cartPrice,
-              discount: discount,
+              discount: discount.toFixed(0),
               delivery: 0,
-              finalAmount: finalAmount,
+              finalAmount: finalAmount.toFixed(0),
             }}
           />
         </div>
