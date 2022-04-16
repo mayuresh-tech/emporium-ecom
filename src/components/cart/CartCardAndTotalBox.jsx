@@ -12,7 +12,7 @@ const CartCardAndTotalBox = () => {
   let discount = 0;
   let finalAmount = 0;
 
-  data.cart.map((item) => {
+  data.cart.forEach((item) => {
     cartPrice = cartPrice + item.originalPrice;
     discount = discount + (item.originalPrice / 100) * item.discountPercent;
   });
@@ -25,7 +25,7 @@ const CartCardAndTotalBox = () => {
       {data.cart.length === 0 ? (
         <div className="empty-cart">
           <p>No products in Cart!</p>
-          <img src="./assets/empty_cart.svg"></img>
+          <img src="./assets/empty_cart.svg" alt="Empty Cart"></img>
         </div>
       ) : (
         <div class="main-cart-box">

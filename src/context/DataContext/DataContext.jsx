@@ -1,8 +1,6 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { DataReducer } from "../DataReducer/DataReducer";
 
-import { v4 as uuid } from "uuid";
-
 import { getProducts, getCategories } from "../../services/services.js";
 
 const DataContext = createContext();

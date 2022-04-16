@@ -11,10 +11,7 @@ const ListingPage = () => {
   let trendingArr = [];
   let productsArr = [];
 
-  console.log(trendingArr);
-  console.log(productsArr);
-
-  data.products.map((item) => {
+  data.products.forEach((item) => {
     item.trendingText === "Trend"
       ? trendingArr.push(item)
       : productsArr.push(item);

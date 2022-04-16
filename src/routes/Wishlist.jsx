@@ -13,7 +13,7 @@ const Wishlist = () => {
         {data.wishlist.length === 0 ? (
           <div className="empty-wishlist">
             <p>No products wishlisted!</p>
-            <img src="./assets/empty_wishlist.svg"></img>
+            <img src="./assets/empty_wishlist.svg" alt="Empty Wishlist"></img>
           </div>
         ) : (
           data.wishlist.map((item) => {
