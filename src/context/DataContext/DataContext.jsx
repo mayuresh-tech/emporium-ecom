@@ -3,16 +3,11 @@ import { DataReducer } from "../DataReducer/DataReducer";
 
 import axios from "axios";
 
-import {
-  getProducts,
-  getCategories,
-} from "../../services/services.js";
+import { getProducts, getCategories } from "../../services/services.js";
 
 const DataContext = createContext();
 
 const DataProvider = ({ children }) => {
-  //const loginToken = localStorage.getItem("login");
-
   const [data, dispatch] = useReducer(DataReducer, {
     products: [],
     cart: [],
@@ -28,33 +23,41 @@ const DataProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    const loginToken = localStorage.getItem("login");
+    (async () => {
+      const loginToken = localStorage.getItem("login");
 
-    const loadCartUserData = async () => {
-      const cartResponse = await axios.get(`/api/user/cart`, {
-        headers: {
-          authorization: loginToken,
-        },
-      });
-      dispatch({
-        type: "LOAD_CART",
-        payload: cartResponse.data.cart,
-      });
-    };
-  
-    const loadWishlistUserData = async () => {
-      const wishlistResponse = await axios.get(`/api/user/wishlist`, {
-        headers: {
-          authorization: loginToken,
-        },
-      });
-      dispatch({
-        type: "LOAD_WISHLIST",
-        payload: wishlistResponse.data.wishlist,
-      });
-    };
+      const loadCartUserData = async () => {
+        if ("login" in localStorage) {
+          const cartResponse = await axios.get(`/api/user/cart`, {
+            headers: {
+              authorization: loginToken,
+            },
+          });
+          dispatch({
+            type: "LOAD_CART",
+            payload: cartResponse.data.cart,
+          });
+        } else {
+          // do nothing
+        }
+      };
 
-    async function performSteps() {
+      const loadWishlistUserData = async () => {
+        if ("login" in localStorage) {
+          const wishlistResponse = await axios.get(`/api/user/wishlist`, {
+            headers: {
+              authorization: loginToken,
+            },
+          });
+          dispatch({
+            type: "LOAD_WISHLIST",
+            payload: wishlistResponse.data.wishlist,
+          });
+        } else {
+          // do nothing
+        }
+      };
+
       try {
         const productResponse = await getProducts();
         dispatch({
@@ -81,8 +84,7 @@ const DataProvider = ({ children }) => {
       } catch (e) {
         console.log("load", e);
       }
-    }
-    performSteps();
+    })();
   }, []);
 
   return (

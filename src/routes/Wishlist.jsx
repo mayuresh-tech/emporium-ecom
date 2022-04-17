@@ -19,9 +19,9 @@ const Wishlist = () => {
           data.wishlist.map((item) => {
             return (
               <ProductCardVertical
-                key={item._id}
+                key={item.id}
                 item={{
-                  id: item._id,
+                  id: item.id,
                   productName: item.productName,
                   productShortDescription: item.productShortDescription,
                   productLongDescription: item.productLongDescription,
