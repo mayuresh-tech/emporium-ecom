@@ -58,6 +58,22 @@ const SignupBox = () => {
     <div className="auth-box-signup">
       <h4 id="h4">Signup</h4>
       <form className="validate">
+      <label className="form-input-label required">First Name</label>
+        <input
+          id="fname"
+          type="text"
+          className="form-input-field"
+          placeholder="John Doe"
+          required
+        />
+        <label className="form-input-label required">Last Name</label>
+        <input
+          id=";name"
+          type="text"
+          className="form-input-field"
+          placeholder="John Doe"
+          required
+        />
         <label className="form-input-label required">Email address</label>
         <input
           id="email-valid"

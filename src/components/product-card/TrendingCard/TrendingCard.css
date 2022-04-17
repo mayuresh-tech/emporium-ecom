@@ -1,0 +1,35 @@
+.toast-box {
+    width: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    margin: 0.8rem;
+    border-radius: 0.4rem;
+    font-weight: 400;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.toast-box svg {
+    margin-left: 1rem;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.toast-error {
+    color: var(--alert-danger-text);
+    background-color: var(--alert-danger-bg);
+    fill: var(--alert-danger-text);
+}
+
+.toast-box.toast-error {
+    position: fixed;
+    top: 12%;
+    right: 5%;
+    width: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    margin: 0.8rem;
+    border-radius: 0.4rem;
+    font-weight: 400;
+    justify-content: space-between;
+}
