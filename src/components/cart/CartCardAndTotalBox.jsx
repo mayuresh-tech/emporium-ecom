@@ -33,9 +33,9 @@ const CartCardAndTotalBox = () => {
             {data.cart.map((item) => {
               return (
                 <ProductCardHorizontal
-                  key={item._id}
+                  key={item.id}
                   item={{
-                    id: item._id,
+                    id: item.id,
                     productName: item.productName,
                     productShortDescription: item.productShortDescription,
                     productLongDescription: "",
