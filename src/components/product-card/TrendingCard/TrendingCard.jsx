@@ -107,36 +107,6 @@ const TrendingCard = ({ item }) => {
     }
   }
 
-  async function removeFromCart(product) {
-    try {
-      const responseCart = await axios.get(`/api/user/cart`, {
-        headers: {
-          authorization: loginToken,
-        },
-      });
-      if (responseCart.data.cart.find((item) => item._id === product._id)) {
-        const response = await axios.delete(`/api/user/cart/${product.id}`, {
-          headers: {
-            authorization: loginToken,
-          },
-        });
-        if (response.status === 200 || response.status === 201) {
-          const serverResponse = await axios.get(`/api/user/cart`, {
-            headers: {
-              authorization: loginToken,
-            },
-          });
-          dispatch({
-            type: "LOAD_CART",
-            payload: serverResponse.data.cart,
-          });
-        }
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
   return (
     <div className="card-container-horizontal-listing">
       <div className="image-container">
