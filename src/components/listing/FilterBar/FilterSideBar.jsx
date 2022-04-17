@@ -60,6 +60,22 @@ const FilterSideBar = () => {
               />
               <p>Womens collection</p>
             </div>
+            <div className="side-ways-left big">
+              <input
+                onChange={() => dispatch({ type: "ELECTRONICS" })}
+                checked={data.electronics === true}
+                type="checkbox"
+              />
+              <p>Electronics</p>
+            </div>
+            <div className="side-ways-left big">
+              <input
+                onChange={() => dispatch({ type: "DECOR" })}
+                checked={data.decor === true}
+                type="checkbox"
+              />
+              <p>Decor</p>
+            </div>
           </div>
         </div>
 
