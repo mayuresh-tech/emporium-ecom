@@ -6,7 +6,7 @@ import ProductCardVertical from "../product-card/VerticalCard/ProductCardVertica
 import "./ListingPage.css";
 
 const ListingPage = () => {
-  const { data } = useData();
+  const { data, filtered } = useData();
 
   let trendingArr = [];
   let productsArr = [];
@@ -46,7 +46,7 @@ const ListingPage = () => {
       })}
 
       <div className="products">
-        {productsArr.map((item) => {
+        {filtered.map((item) => {
           return (
             <ProductCardVertical
               key={item._id}
