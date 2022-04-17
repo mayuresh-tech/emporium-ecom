@@ -1,8 +1,50 @@
 import React from "react";
+import axios from "axios";
+
 
 import "./ProductCardHorizontal.css";
+import { useData } from "../../../context/DataContext/DataContext";
 
 const ProductCardHorizontal = ({ item }) => {
+  const { dispatch } = useData
+
+  const loginToken = localStorage.getItem("login");
+
+  async function addProductToWishlist(product) {
+    try {
+      const responseWishlist = await axios.get(`/api/user/wishlist`, {
+        headers: {
+          authorization: loginToken,
+        },
+      });
+      if (
+        !responseWishlist.data.wishlist.find((item) => item.id === product.id)
+      ) {
+        const response = await axios.post(
+          "/api/user/wishlist",
+          {
+            product,
+          },
+          {
+            headers: {
+              authorization: loginToken,
+            },
+          }
+        );
+        if (response.status === 200 || response.status === 201) {
+          product.wishlisted = true;
+          dispatch({
+            type: "LOAD_WISHLIST",
+            payload: response.data.wishlist,
+          });
+        }
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+
   return (
     <div class="card-container-horizontal">
       <div className="content-card">
@@ -44,7 +86,7 @@ const ProductCardHorizontal = ({ item }) => {
               </button>
             </div>
             {item.isWishlisted ? null : (
-              <button class="no-bg btn-icon-text-outline">
+              <button  onClick={() => addProductToWishlist(item)} class="no-bg btn-icon-text-outline">
                 Move to Wishlist
               </button>
             )}

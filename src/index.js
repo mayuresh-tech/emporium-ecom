@@ -19,12 +19,11 @@ makeServer();
 root.render(
   <StrictMode>
     <BrowserRouter>
-        <AuthProvider>
+      <AuthProvider>
         <DataProvider>
           <App />
-
-          </DataProvider>
-        </AuthProvider>
+        </DataProvider>
+      </AuthProvider>
     </BrowserRouter>
   </StrictMode>
 );

@@ -8,7 +8,7 @@ export const getCategories = async () => axios.get("/api/categories");
 
 // private
 export const getCartlist = async ({ encodedToken }) => {
-    axios.get(`/api/user/cart`, {
+    await axios.get(`/api/user/cart`, {
         headers: {
             authorization: encodedToken,
         },
@@ -16,7 +16,7 @@ export const getCartlist = async ({ encodedToken }) => {
 }
 
 export const addCartlist = async ({ product, encodedToken }) => {
-    axios.post(
+    await axios.post(
         `/api/user/cart`,
         { product },
         {
@@ -28,7 +28,7 @@ export const addCartlist = async ({ product, encodedToken }) => {
 }
 
 export const deleteCartlist = async ({ productId, encodedToken }) => {
-    axios.delete(`/api/user/cart/${productId}`, {
+    await axios.delete(`/api/user/cart/${productId}`, {
         headers: {
             authorization: encodedToken,
         },
@@ -36,7 +36,7 @@ export const deleteCartlist = async ({ productId, encodedToken }) => {
 }
 
 export const editCartlist = async ({ productId, encodedToken, type }) => {
-    axios.post(
+    await axios.post(
         `/api/user/cart/${productId}`,
         {
             action: { type },
