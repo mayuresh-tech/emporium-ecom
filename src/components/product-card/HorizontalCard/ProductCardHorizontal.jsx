@@ -9,8 +9,6 @@ const ProductCardHorizontal = ({ item }) => {
 
   const inWishList = data.wishlist.some((e) => e.id === item.id);
 
-  const inCart = data.cart.some((e) => e.id === item.id);
-
   const loginToken = localStorage.getItem("login");
 
   async function addProductToWishlist(product) {
